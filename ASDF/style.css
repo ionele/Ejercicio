@@ -1,14 +1,27 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
 body {
   background: white;
-  font-family: Georgia, "Times New Roman",
+  font-family: Arial, "Arial",
         Times, serif;
   color: #4D4D4D;
-  background-color: #white }
+  background-color: #white;
+  margin: 0;
+  padding: 0; 
+}
 ul
 {
 list-style-type:none;
 margin:0;
-padding:0;
+padding:0px;
 overflow:hidden;
 }
 li
@@ -23,7 +36,7 @@ font-weight:bold;
 color:#FFFFFF;
 background-color:#2E2E2E;
 text-align:center;
-padding:4px;
+padding:10px;
 text-decoration:none;
 text-transform:uppercase;
 }
@@ -50,10 +63,61 @@ h1 {
 .join-section,
 .connect-section,
 .refer-section{
-  width: 30%;
+  width: 33.3%;
   float: left;
-  padding: 0 1rem;
 }
 .middle-content {
   margin-bottom: 50px;
+}
+.join-section p,
+.join-section h3
+{
+  text-align: center;
+  padding: 0 5rem;
+}
+.join-section img
+{
+  display: block;
+  width: 182px;
+  height: 182px;
+  margin: 0 auto;
+}
+.connect-section p,
+.connect-section h3
+{
+  text-align: center;
+  padding: 0 5rem;
+}
+.connect-section img
+{
+  display: block;
+  width: 182px;
+  height: 182px;
+  margin: 0 auto;
+}
+.refer-section p,
+.refer-section h3
+{
+  text-align: center;
+  padding: 0 5rem;
+}
+.refer-section img
+{
+  display: block;
+  width: 182px;
+  height: 182px;
+  margin: 0 auto;
+}
+.navbar
+{
+  background-color: #2E2E2E;
+}
+.parrafo 
+{
+  display: inline-block;
+  margin: 1rem 2.5rem;
+}
+footer{
+  background-color:#2E2E2E;
+  display: block;
 }
